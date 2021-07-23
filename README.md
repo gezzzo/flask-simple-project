@@ -1,1 +1,3 @@
-"# flask-simple-project" 
+# flask-simple-project" 
+
+pip install flask
