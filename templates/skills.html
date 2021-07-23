@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}skills{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/skills.css') }}">
+{% endblock %}
+{% block body %}
+
+    <h1>Skills</h1>
+    <table>
+        {% for skill in skills %}
+        <tr>
+            <th>{{skill[0]}}</th>
+            <th>{{skill[1]}}</th>
+        </tr>
+        {% endfor %}
+
+    </table>
+    
+    <a href="about">about page</a>
+    <a href="add">add page</a>
+    <a href="/">home page</a>
+{% endblock %}
+{% block js %}
+    <script src="{{ url_for('static', filename ='js/skills.js') }}"></script>
+{% endblock %}
